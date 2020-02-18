@@ -53,6 +53,9 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit2"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
-    //cicerone
-    implementation "ru.terrakok.cicerone:cicerone:$cicerone"
+    /*//cicerone
+    implementation "ru.terrakok.cicerone:cicerone:$cicerone"*/
+
+
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
 }

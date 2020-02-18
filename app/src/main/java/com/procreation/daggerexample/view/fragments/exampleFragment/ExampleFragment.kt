@@ -11,15 +11,19 @@ import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.procreation.daggerexample.R
 import com.procreation.daggerexample.api.responseObjects.EventModel
+import com.procreation.daggerexample.view.activities.MainActivity
+import com.procreation.daggerexample.view.activities.MainActivityView
 import kotlinx.android.synthetic.main.fragment_example.*
 
 
-class ExampleFragment : MvpAppCompatFragment(),
+class ExampleFragment(callback: MainActivityView) : MvpAppCompatFragment(),
     ExampleFragmentView {
 
     private var mList = ArrayList<EventModel>()
     lateinit var recyclerView: RecyclerView
     private lateinit var adapter: ExampleAdapter
+
+    val c = callback
 
     @InjectPresenter
     lateinit var presenter: ExampleFragmentPresenter
@@ -28,7 +32,9 @@ class ExampleFragment : MvpAppCompatFragment(),
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
+
         return inflater.inflate(R.layout.fragment_example, container, false)
     }
 
@@ -64,5 +70,9 @@ class ExampleFragment : MvpAppCompatFragment(),
                 mList
             )
         recyclerView.adapter = adapter
+
+        c.test(list[0].title)
     }
+
+
 }
