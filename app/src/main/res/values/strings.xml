@@ -2,5 +2,6 @@
     <string name="app_name">DaggerExample</string>
     <string name="save">save to pref</string>
     <string name="string_from_preferences">string from preferences</string>
+    <string name="string_from_retrofit">string from retrofit</string>
     <string name="load">load from pref</string>
 </resources>

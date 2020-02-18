@@ -25,6 +25,8 @@ android {
 ext {
     daggerVersion = '2.23.2'
     moxyVersion = '1.7.0'
+    retrofit2 = '2.6.1'
+    okhttp3 = '4.0.0'
 }
 
 dependencies {
@@ -37,17 +39,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
     //dagger
     implementation "com.google.dagger:dagger:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
-
     //arello-mobile for mvp
-
     implementation "tech.schoolhelper:moxy-x:$moxyVersion"
     kapt "tech.schoolhelper:moxy-x-compiler:$moxyVersion"
     implementation "tech.schoolhelper:moxy-x-androidx:$moxyVersion"
-
-
-
+    //retrofit2
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
 
 }
