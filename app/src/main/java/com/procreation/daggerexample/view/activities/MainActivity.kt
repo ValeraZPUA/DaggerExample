@@ -1,10 +1,9 @@
 package com.procreation.daggerexample.view.activities
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.arellomobile.mvp.MvpAppCompatActivity
 import com.procreation.daggerexample.R
-import com.procreation.daggerexample.view.fragments.ExampleFragment
+import com.procreation.daggerexample.view.fragments.exampleFragment.ExampleFragment
 
 
 class MainActivity : MvpAppCompatActivity(), MainActivityView {
@@ -13,7 +12,9 @@ class MainActivity : MvpAppCompatActivity(), MainActivityView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction().add(R.id.fragment_container, ExampleFragment()).commit()
+        supportFragmentManager.beginTransaction().add(R.id.fragment_container,
+            ExampleFragment()
+        ).commit()
     }
 
 }

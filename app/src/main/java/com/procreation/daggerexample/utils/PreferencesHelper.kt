@@ -14,4 +14,8 @@ class PreferencesHelper @Inject constructor(
     fun loadData(): String? {
         return sharedPreferences.getString(Constants.STRING_VALUE,"")
     }
+
+    fun getToken(): String? {
+        return sharedPreferences.getString(Constants.TOKEN, "")
+    }
 }

@@ -1,4 +1,4 @@
-package com.procreation.daggerexample.models;
+package com.procreation.daggerexample.api.responseObjects;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

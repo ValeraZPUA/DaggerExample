@@ -1,7 +1,7 @@
-package com.procreation.daggerexample.view.fragments
+package com.procreation.daggerexample.view.fragments.exampleFragment
 
 import com.arellomobile.mvp.MvpView
-import com.procreation.daggerexample.models.EventModel
+import com.procreation.daggerexample.api.responseObjects.EventModel
 
 
 interface ExampleFragmentView : MvpView {

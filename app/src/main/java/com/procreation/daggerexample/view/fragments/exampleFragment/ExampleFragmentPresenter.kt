@@ -1,10 +1,10 @@
-package com.procreation.daggerexample.view.fragments
+package com.procreation.daggerexample.view.fragments.exampleFragment
 
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
 import com.procreation.daggerexample.App
 import com.procreation.daggerexample.api.RequestsApi
-import com.procreation.daggerexample.models.EventModel
+import com.procreation.daggerexample.api.responseObjects.EventModel
 import com.procreation.daggerexample.utils.PreferencesHelper
 import retrofit2.Call
 import retrofit2.Callback

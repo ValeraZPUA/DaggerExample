@@ -1,20 +1,25 @@
-package com.procreation.daggerexample.view.fragments
+package com.procreation.daggerexample.view.fragments.exampleFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.procreation.daggerexample.R
-import com.procreation.daggerexample.models.EventModel
+import com.procreation.daggerexample.api.responseObjects.EventModel
 import kotlinx.android.synthetic.main.fragment_example.*
 
 
-class ExampleFragment : MvpAppCompatFragment(), ExampleFragmentView {
+class ExampleFragment : MvpAppCompatFragment(),
+    ExampleFragmentView {
 
     private var mList = ArrayList<EventModel>()
+    lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: ExampleAdapter
 
     @InjectPresenter
     lateinit var presenter: ExampleFragmentPresenter
@@ -30,6 +35,10 @@ class ExampleFragment : MvpAppCompatFragment(), ExampleFragmentView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        recyclerView = recycler_view
+        val linearLayoutManager = LinearLayoutManager(requireContext())
+        recyclerView.layoutManager = linearLayoutManager
+
         btn_save.setOnClickListener {
             presenter.saveData(edit_text.text.toString())
 
@@ -42,7 +51,6 @@ class ExampleFragment : MvpAppCompatFragment(), ExampleFragmentView {
         btn_retrofit.setOnClickListener {
             presenter.getData()
         }
-
     }
 
     override fun showToast(message: String) {
@@ -51,8 +59,10 @@ class ExampleFragment : MvpAppCompatFragment(), ExampleFragmentView {
 
     override fun setList(list: List<EventModel>?) {
         mList.addAll(list!!)
-        text_view_retrofit.text = list[0].title
+        adapter =
+            ExampleAdapter(
+                mList
+            )
+        recyclerView.adapter = adapter
     }
-
-
 }

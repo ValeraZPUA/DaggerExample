@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.fragments.ExampleFragment">
+    tools:context=".view.fragments.exampleFragment.ExampleFragment">
 
     <EditText
         android:id="@+id/edit_text"
@@ -39,10 +40,9 @@
         android:layout_marginTop="30dp"
         android:text="@string/load" />
 
-    <TextView
-        android:id="@+id/text_view_retrofit"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/string_from_retrofit" />
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

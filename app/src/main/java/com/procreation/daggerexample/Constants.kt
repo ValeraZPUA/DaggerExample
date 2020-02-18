@@ -9,6 +9,6 @@ class Constants {
 
         const val BASE_URL = "https://api.motorevents.com.au/test_api/"
 
-
+        const val TOKEN = "user_token"
     }
 }
