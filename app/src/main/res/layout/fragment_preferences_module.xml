@@ -2,11 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_example"
+    android:id="@+id/fragment_preferences_module"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.fragments.exampleFragment.ExampleFragment">
+    tools:context=".view.fragments.preferencesModuleFragment.PreferencesModuleFragment">
 
     <EditText
         android:id="@+id/edit_text"

@@ -21,8 +21,8 @@
         android:label="fragment_fragment3"
         tools:layout="@layout/fragment_fragment3" />
     <fragment
-        android:id="@+id/exampleFragment"
-        android:name="com.procreation.daggerexample.view.fragments.exampleFragment.ExampleFragment"
-        android:label="fragment_example"
-        tools:layout="@layout/fragment_example" />
+        android:id="@+id/preferencesModuleFragment"
+        android:name="com.procreation.daggerexample.view.fragments.preferencesModuleFragment.PreferencesModuleFragment"
+        android:label="fragment_preferences_module"
+        tools:layout="@layout/fragment_preferences_module" />
 </navigation>

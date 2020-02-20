@@ -1,4 +1,4 @@
-package com.procreation.daggerexample.view.fragments.exampleFragment
+package com.procreation.daggerexample.view.fragments.preferencesModuleFragment
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,9 +9,9 @@ import com.procreation.daggerexample.R
 import com.procreation.daggerexample.api.responseObjects.EventModel
 import kotlinx.android.synthetic.main.rv_item.view.*
 
-class ExampleAdapter(
+class PreferencesModuleAdapter(
     private var posts: List<EventModel>
-) : RecyclerView.Adapter<ExampleAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<PreferencesModuleAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)

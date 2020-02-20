@@ -1,4 +1,4 @@
-package com.procreation.daggerexample.view.fragments.exampleFragment
+package com.procreation.daggerexample.view.fragments.preferencesModuleFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,19 +11,22 @@ import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.procreation.daggerexample.R
 import com.procreation.daggerexample.api.responseObjects.EventModel
-import kotlinx.android.synthetic.main.fragment_example.*
+import com.procreation.daggerexample.view.activities.MainActivity
+import com.procreation.daggerexample.view.activities.MainActivityView
+import kotlinx.android.synthetic.main.app_bar.*
+import kotlinx.android.synthetic.main.fragment_preferences_module.*
 
 
-class ExampleFragment : MvpAppCompatFragment(),
-    ExampleFragmentView {
+class PreferencesModuleFragment : MvpAppCompatFragment(),
+    PreferencesModuleFragmentView {
 
     private var mList = ArrayList<EventModel>()
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: ExampleAdapter
+    private lateinit var adapter: PreferencesModuleAdapter
 
 
     @InjectPresenter
-    lateinit var presenter: ExampleFragmentPresenter
+    lateinit var presenter: PreferencesModuleFragmentPresenter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,12 +34,12 @@ class ExampleFragment : MvpAppCompatFragment(),
         savedInstanceState: Bundle?
 
     ): View? {
-
-        return inflater.inflate(R.layout.fragment_example, container, false)
+        return inflater.inflate(R.layout.fragment_preferences_module, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity).supportActionBar!!.title = getString(R.string.preferences_module)
 
         recyclerView = recycler_view
         val linearLayoutManager = LinearLayoutManager(requireContext())
@@ -63,7 +66,7 @@ class ExampleFragment : MvpAppCompatFragment(),
     override fun setList(list: List<EventModel>?) {
         mList.addAll(list!!)
         adapter =
-            ExampleAdapter(
+            PreferencesModuleAdapter(
                 mList
             )
         recyclerView.adapter = adapter

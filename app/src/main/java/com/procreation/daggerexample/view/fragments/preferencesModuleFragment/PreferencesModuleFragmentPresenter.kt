@@ -1,4 +1,4 @@
-package com.procreation.daggerexample.view.fragments.exampleFragment
+package com.procreation.daggerexample.view.fragments.preferencesModuleFragment
 
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 
 @InjectViewState
-class ExampleFragmentPresenter : MvpPresenter<ExampleFragmentView>() {
+class PreferencesModuleFragmentPresenter : MvpPresenter<PreferencesModuleFragmentView>() {
 
     @Inject
     lateinit var preferencesHelper: PreferencesHelper

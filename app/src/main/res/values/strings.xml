@@ -13,4 +13,5 @@
     <string name="fragment_3">Fragment 3</string>
     <string name="click_burger_to_open_menu">Click Burger to open menu</string>
     <string name="example_fragment">Example Fragment</string>
+    <string name="preferences_module">Preferences Module</string>
 </resources>

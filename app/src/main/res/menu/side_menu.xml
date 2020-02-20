@@ -12,8 +12,8 @@
         <item android:id="@+id/fragment3"
             android:title="@string/fragment_3"/>
 
-        <item android:id="@+id/exampleFragment"
-            android:title="@string/example_fragment"/>
+        <item android:id="@+id/preferencesModuleFragment"
+            android:title="@string/preferences_module"/>
 
     <!--</group>-->
 
