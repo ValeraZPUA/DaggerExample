@@ -20,11 +20,6 @@ import kotlinx.android.synthetic.main.fragment_preferences_module.*
 class PreferencesModuleFragment : MvpAppCompatFragment(),
     PreferencesModuleFragmentView {
 
-    private var mList = ArrayList<EventModel>()
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: PreferencesModuleAdapter
-
-
     @InjectPresenter
     lateinit var presenter: PreferencesModuleFragmentPresenter
 
@@ -41,9 +36,7 @@ class PreferencesModuleFragment : MvpAppCompatFragment(),
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity).supportActionBar!!.title = getString(R.string.preferences_module)
 
-        recyclerView = recycler_view
-        val linearLayoutManager = LinearLayoutManager(requireContext())
-        recyclerView.layoutManager = linearLayoutManager
+
 
         btn_save.setOnClickListener {
             presenter.saveData(edit_text.text.toString())
@@ -54,21 +47,9 @@ class PreferencesModuleFragment : MvpAppCompatFragment(),
             text_view.text = presenter.loadData().toString()
         }
 
-        btn_retrofit.setOnClickListener {
-            presenter.getData()
-        }
     }
 
     override fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_LONG).show()
-    }
-
-    override fun setList(list: List<EventModel>?) {
-        mList.addAll(list!!)
-        adapter =
-            PreferencesModuleAdapter(
-                mList
-            )
-        recyclerView.adapter = adapter
     }
 }
