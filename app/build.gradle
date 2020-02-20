@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdkVersion 29
@@ -20,6 +21,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    /**
+     * add compileOptions and kotlinOptions for AppBarConfiguration
+     */
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
 ext {
@@ -27,7 +40,8 @@ ext {
     moxyVersion = '1.7.0'
     retrofit2 = '2.6.1'
     okhttp3 = '4.0.0'
-    cicerone = '5.1.0'
+    //cicerone = '5.1.0'
+    nav_version = '2.2.1'
 }
 
 dependencies {
@@ -55,7 +69,7 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3"
     /*//cicerone
     implementation "ru.terrakok.cicerone:cicerone:$cicerone"*/
-
-
-    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 }

@@ -5,11 +5,12 @@
     <string name="string_from_retrofit">string from retrofit</string>
     <string name="load">load from pref</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="back">back</string>
     <string name="next">next</string>
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_2">Fragment 2</string>
     <string name="fragment_3">Fragment 3</string>
+    <string name="click_burger_to_open_menu">Click Burger to open menu</string>
+    <string name="example_fragment">Example Fragment</string>
 </resources>

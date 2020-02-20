@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 
 import com.procreation.daggerexample.R
 import kotlinx.android.synthetic.main.fragment_fragment3.*
@@ -27,10 +26,10 @@ class Fragment3 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
+        //val navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment)
 
         btn_back.setOnClickListener {
-            navController.popBackStack()
+            //navController.popBackStack()
         }
     }
 }
