@@ -11,12 +11,12 @@
         android:label="fragment_fragment1"
         tools:layout="@layout/fragment_fragment1" />
     <fragment
-        android:id="@+id/preferencesModuleFragment"
+        android:id="@+id/fragment_preferences_module"
         android:name="com.procreation.daggerexample.view.fragments.preferencesModuleFragment.PreferencesModuleFragment"
         android:label="fragment_preferences_module"
         tools:layout="@layout/fragment_preferences_module" />
     <fragment
-        android:id="@+id/networkModuleFragment"
+        android:id="@+id/fragment_network_module"
         android:name="com.procreation.daggerexample.view.fragments.networkModuleFragment.NetworkModuleFragment"
         android:label="fragment_network_module"
         tools:layout="@layout/fragment_network_module" />

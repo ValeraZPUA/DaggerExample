@@ -5,13 +5,10 @@
         <item android:id="@+id/fragment1"
             android:title="@string/start_fragment"/>
 
-        <item android:id="@+id/fragment2"
-            android:title="@string/fragment_2"/>
-
-        <item android:id="@+id/networkModuleFragment"
+        <item android:id="@+id/fragment_network_module"
             android:title="@string/network_module"/>
 
-        <item android:id="@+id/preferencesModuleFragment"
+        <item android:id="@+id/fragment_preferences_module"
             android:title="@string/preferences_module"/>
 
     </group>
