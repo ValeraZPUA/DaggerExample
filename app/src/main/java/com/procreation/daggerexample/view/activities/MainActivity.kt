@@ -32,7 +32,7 @@ class MainActivity : MvpAppCompatActivity(), MainActivityView {
             setOf(
                 R.id.fragment1,
                 R.id.fragment2,
-                R.id.fragment3,
+                R.id.fragment_network_module,
                 R.id.fragment_preferences_module
             ), drawerLayout
         )

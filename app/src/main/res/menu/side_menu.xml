@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--<group android:checkableBehavior="single">-->
-
+    <group android:checkableBehavior="single">
         <item android:id="@+id/fragment1"
-            android:title="@string/fragment_1"/>
+            android:title="@string/start_fragment"/>
 
         <item android:id="@+id/fragment2"
             android:title="@string/fragment_2"/>
 
-        <item android:id="@+id/fragment3"
-            android:title="@string/fragment_3"/>
+        <item android:id="@+id/networkModuleFragment"
+            android:title="@string/network_module"/>
 
         <item android:id="@+id/preferencesModuleFragment"
             android:title="@string/preferences_module"/>
 
-    <!--</group>-->
+    </group>
+
 
 </menu>

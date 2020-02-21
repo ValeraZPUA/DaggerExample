@@ -14,25 +14,13 @@ import javax.inject.Inject
 
 
 @InjectViewState
-class NetworkModuleFragmentPresenter : MvpPresenter<PreferencesModuleFragmentView>() {
+class NetworkModuleFragmentPresenter : MvpPresenter<NetworkModuleFragmentView>() {
 
-    @Inject
-    lateinit var preferencesHelper: PreferencesHelper
     @Inject
     lateinit var requestsApi: RequestsApi
 
     init {
         App.appComponent.inject(this)
-    }
-
-    fun saveData(string: String) {
-        preferencesHelper.saveData(string)
-        viewState.showToast("saved")
-    }
-
-    fun loadData(): String? {
-        viewState.showToast("loaded")
-        return preferencesHelper.loadData()
     }
 
     fun getData() {

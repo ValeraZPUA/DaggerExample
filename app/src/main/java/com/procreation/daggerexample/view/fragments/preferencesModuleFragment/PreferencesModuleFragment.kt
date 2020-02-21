@@ -5,17 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.procreation.daggerexample.R
-import com.procreation.daggerexample.api.responseObjects.EventModel
 import com.procreation.daggerexample.view.activities.MainActivity
-import com.procreation.daggerexample.view.activities.MainActivityView
-import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_preferences_module.*
-
 
 class PreferencesModuleFragment : MvpAppCompatFragment(),
     PreferencesModuleFragmentView {

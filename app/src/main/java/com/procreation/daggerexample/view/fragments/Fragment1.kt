@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 
 import com.procreation.daggerexample.R
+import com.procreation.daggerexample.view.activities.MainActivity
 import kotlinx.android.synthetic.main.fragment_fragment1.*
 
 /**
@@ -26,5 +27,8 @@ class Fragment1 : Fragment() {
         return inflater.inflate(R.layout.fragment_fragment1, container, false)
     }
 
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity).supportActionBar!!.title = getString(R.string.start_fragment)
+    }
 }
