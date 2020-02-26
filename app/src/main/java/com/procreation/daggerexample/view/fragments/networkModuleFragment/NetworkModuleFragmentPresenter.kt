@@ -5,8 +5,6 @@ import com.arellomobile.mvp.MvpPresenter
 import com.procreation.daggerexample.App
 import com.procreation.daggerexample.api.RequestsApi
 import com.procreation.daggerexample.api.responseObjects.EventModel
-import com.procreation.daggerexample.utils.PreferencesHelper
-import com.procreation.daggerexample.view.fragments.preferencesModuleFragment.PreferencesModuleFragmentView
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -4,4 +4,5 @@ import com.arellomobile.mvp.MvpView
 
 interface PreferencesModuleFragmentView : MvpView {
     fun showToast(message: String)
+    fun setTextView(text: String?)
 }

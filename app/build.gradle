@@ -42,6 +42,8 @@ ext {
     okhttp3 = '4.0.0'
     //cicerone = '5.1.0'
     nav_version = '2.2.1'
+    rxJava2 = '2.2.8'
+    rxAndroid = '2.0.0'
 }
 
 dependencies {
@@ -72,4 +74,7 @@ dependencies {
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    //RxJava 2
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava2"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid"
 }

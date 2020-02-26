@@ -38,12 +38,16 @@ class PreferencesModuleFragment : MvpAppCompatFragment(),
         }
 
         btn_load.setOnClickListener {
-            text_view.text = presenter.loadData().toString()
+            presenter.loadData()
         }
 
     }
 
     override fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_LONG).show()
+    }
+
+    override fun setTextView(text: String?) {
+        text_view.text = text
     }
 }
