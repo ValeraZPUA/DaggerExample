@@ -28,7 +28,8 @@ class MainActivity : MvpAppCompatActivity(), MainActivityView {
             setOf(
                 R.id.fragment1,
                 R.id.fragment_network_module,
-                R.id.fragment_preferences_module
+                R.id.fragment_preferences_module,
+                R.id.fragment_touch
             ), drawerLayout
         )
 
