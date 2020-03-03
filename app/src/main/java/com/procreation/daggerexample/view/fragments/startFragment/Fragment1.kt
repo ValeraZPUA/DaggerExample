@@ -1,4 +1,4 @@
-package com.procreation.daggerexample.view.fragments
+package com.procreation.daggerexample.view.fragments.startFragment
 
 
 import android.os.Bundle
