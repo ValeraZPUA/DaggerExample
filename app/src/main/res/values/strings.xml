@@ -16,4 +16,5 @@
     <string name="preferences_module">Preferences Module</string>
     <string name="network_module">Network Module</string>
     <string name="start_fragment">Start Fragment</string>
+    <string name="load_from_web">load</string>
 </resources>
