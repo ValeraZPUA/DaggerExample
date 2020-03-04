@@ -51,7 +51,7 @@ class TouchFragment : Fragment(), View.OnTouchListener {
                 sUp = "Up: $x,$y"
             }
         }
-        tv.text = sDown + "\n" + sMove + "\n" + sUp
+        tv.text = getString(R.string.сoordinates_value, sDown, "\n", sMove, "\n", sUp)
         return true
     }
 }
