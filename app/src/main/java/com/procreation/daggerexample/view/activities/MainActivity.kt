@@ -29,7 +29,8 @@ class MainActivity : MvpAppCompatActivity(), MainActivityView {
                 R.id.fragment1,
                 R.id.fragment_network_module,
                 R.id.fragment_preferences_module,
-                R.id.fragment_touch
+                R.id.fragment_touch,
+                R.id.fragment_multi_touch
             ), drawerLayout
         )
 

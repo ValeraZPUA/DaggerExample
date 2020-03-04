@@ -18,6 +18,7 @@
     <string name="start_fragment">Start Fragment</string>
     <string name="load_from_web">load</string>
     <string name="touch_fragment">Touch Fragment</string>
+    <string name="multi_touch_fragment">Multi Touch Fragment</string>
     <string name="сoordinates">Сoordinates</string>
     <string name="сoordinates_value">%s %s %s %s %s</string>
 </resources>

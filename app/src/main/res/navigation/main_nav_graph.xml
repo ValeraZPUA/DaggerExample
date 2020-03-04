@@ -25,4 +25,9 @@
         android:name="com.procreation.daggerexample.view.fragments.touchFragment.TouchFragment"
         android:label="fragment_touch"
         tools:layout="@layout/fragment_touch" />
+    <fragment
+        android:id="@+id/fragment_multi_touch"
+        android:name="com.procreation.daggerexample.view.fragments.multiTouchFragment.MultiTouchFragment"
+        android:label="fragment_multi_touch"
+        tools:layout="@layout/fragment_multi_touch" />
 </navigation>
