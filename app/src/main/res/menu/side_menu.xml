@@ -23,4 +23,8 @@
         android:id="@+id/fragment_multi_touch"
         android:title="@string/multi_touch_fragment"/>
 
+    <item
+        android:id="@+id/fragment_main_swipe"
+        android:title="@string/swipe_fragment"/>
+
 </menu>

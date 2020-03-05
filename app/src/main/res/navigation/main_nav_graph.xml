@@ -30,4 +30,9 @@
         android:name="com.procreation.daggerexample.view.fragments.multiTouchFragment.MultiTouchFragment"
         android:label="fragment_multi_touch"
         tools:layout="@layout/fragment_multi_touch" />
+    <fragment
+        android:id="@+id/fragment_main_swipe"
+        android:name="com.procreation.daggerexample.view.fragments.slidingFragments.MainSwipeFragment"
+        android:label="fragment_main_swipe"
+        tools:layout="@layout/fragment_main_swipe" />
 </navigation>
