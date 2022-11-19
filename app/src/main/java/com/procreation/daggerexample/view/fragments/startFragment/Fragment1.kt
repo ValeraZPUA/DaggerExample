@@ -20,6 +20,6 @@ class Fragment1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as MainActivity).supportActionBar!!.title = getString(R.string.start_fragment)
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.start_fragment)
     }
 }
