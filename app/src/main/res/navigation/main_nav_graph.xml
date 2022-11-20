@@ -35,4 +35,8 @@
         android:name="com.procreation.daggerexample.view.fragments.slidingFragments.MainSwipeFragment"
         android:label="fragment_main_swipe"
         tools:layout="@layout/fragment_main_swipe" />
+    <fragment
+        android:id="@+id/dataStorePreferencesFragment"
+        android:name="com.procreation.daggerexample.view.fragments.dateStorePreferences.DataStorePreferencesFragment"
+        android:label="DataStorePreferencesFragment" />
 </navigation>

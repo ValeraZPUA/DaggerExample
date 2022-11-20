@@ -27,4 +27,9 @@
         android:id="@+id/fragment_main_swipe"
         android:title="@string/swipe_fragment"/>
 
+
+    <item
+        android:id="@+id/dataStorePreferencesFragment"
+        android:title="@string/DataStorePrefs"/>
+
 </menu>

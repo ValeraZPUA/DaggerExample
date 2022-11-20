@@ -22,6 +22,7 @@
     <string name="сoordinates">Сoordinates</string>
     <string name="сoordinates_value">%s %s %s %s %s</string>
     <string name="swipe_fragment">Swipe Fragment</string>
+    <string name="DataStorePrefs">DataStorePref</string>
     <string name="first">First</string>
     <string name="second">Second</string>
     <string name="third">Third</string>

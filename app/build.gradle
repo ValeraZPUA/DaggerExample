@@ -21,6 +21,10 @@ android {
         }
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     /**
      * add compileOptions and kotlinOptions for AppBarConfiguration
      */
@@ -42,6 +46,7 @@ ext {
     nav_version = '2.5.3'
     rxJava2 = '2.2.9'
     rxAndroid = '2.1.0'
+    dataStore = '1.0.0'
 }
 
 dependencies {
@@ -73,4 +78,7 @@ dependencies {
     //RxJava 2
     implementation "io.reactivex.rxjava2:rxjava:$rxJava2"
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid"
+    //DataStore
+    implementation "androidx.datastore:datastore-preferences:$dataStore"
+    implementation "androidx.datastore:datastore-preferences-rxjava2:$dataStore"
 }
